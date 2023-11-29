@@ -427,7 +427,7 @@ const CONTEXT_MENU_ITEM_ID = 'letter-scrambler';
 chrome.runtime.onInstalled.addListener(async () => {
   chrome.contextMenus.create({
     id: CONTEXT_MENU_ITEM_ID,
-    title: 'Confute',
+    title: 'Scramble',
     type: 'normal',
     contexts: ['selection'],
   });
