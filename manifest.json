@@ -1,0 +1,18 @@
+{
+  "name": "Scramble Words & Letters",
+  "description": "An extension to replace letters to confuse LLM",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["contextMenus"],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
